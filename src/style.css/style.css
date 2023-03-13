@@ -1,0 +1,119 @@
+:root {
+    --almostWhite: #fafafa;
+    --mediumGray: hsl(0, 2%, 51%);
+    --almostBlack: hwb(0 8% 92%);
+    --btnBuscar: #2D3748;
+    --btnBuscarHover: #4a5568;
+    --redDark: #ff291d;
+    --redLight: #FF4136;
+    --borderFocus: #a0ccf0;
+    --backgroundForm: #38b2ac;
+    --body: rgba(237, 242, 247);
+}
+
+/* generales */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        "Helvetica Neue",
+        Arial,
+        "Noto Sans",
+        sans-serif,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        "Noto Color Emoji";
+}
+
+body {
+    width: 100%;
+    background-color: var(--body);
+}
+
+.main {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    color: var(--almostBlack);
+}
+
+.main h1 {
+    font-size: 3.6rem;
+    font-weight: 700;
+    margin-top: 100px;
+}
+
+.contenedor-formulario {
+    margin: 40px auto;
+    padding: 30px;
+    background-color: var(--backgroundForm);
+}
+
+.contenedor-formulario div .campo {
+    width: 100%;
+    padding: 12px;
+    margin-top: 12px;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+}
+
+
+.contenedor-formulario .campo::placeholder {
+    font-size: 1.6rem;
+}
+
+.contenedor-formulario div .campo:focus {
+    outline: none;
+    border: 2px solid var(--borderFocus);
+}
+
+.btnBuscar {
+    width: 100%;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 20px;
+    padding: 15px;
+    color: var(--almostWhite);
+    background-color: var(--btnBuscar);
+    border: none;
+    border-radius: 5px;
+}
+
+.btnBuscar:hover {
+    background-color: var(--btnBuscarHover);
+}
+
+.alerta__error {
+    width: 100%;
+    font-weight: 600;
+    font-size: 1.6rem;
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px 12px;
+    margin-top: 30px;
+    border-radius: 5px;
+    color: var(--redDark);
+    border: 1px solid var(--redLight);
+    border-radius: 5px;
+    background: var(--almostWhite);
+}
+
+@media (min-width: 600px) {
+    .contenedor-resultado {
+        grid-template-columns: 1fr 1fr;
+    }
+}

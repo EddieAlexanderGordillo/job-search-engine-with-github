@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Github Jobs Search Engine</title>
+    <link rel="stylesheet" href="../src/style.css/style.css" />
+  </head>
+  <body>
+    <main class="main">
+      <h1>Buscador Github Jobs</h1>
+      <form action="#" id="formulario" class="contenedor-formulario">
+        <div>
+          <input
+            type="text"
+            class="campo"
+            id="busqueda"
+            placeholder="Búsqueda por tecnología: ej. Node.js Java o C#"
+          />
+          <input type="submit" value="Buscar Vacantes" class="btnBuscar" />
+        </div>
+      </form>
+      <div id="resultado" class="contenedor-resultado"></div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+    <script src="../src/index.js"></script>
+  </body>
+</html>
